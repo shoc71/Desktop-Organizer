@@ -1,16 +1,18 @@
 import os
 import shutil
 
-# desktop = 'C:/Users/shoc71/Desktop/'
-desktop = 'path/of/organization/'
+desktop = 'C:/Users/Sonsi/Desktop/'
 
 directories = {
-    'Picture_Sort': ['.jpg', '.png', '.webp', '.jpeg'],
+    'Picture_Sort': ['.jpg', '.png', '.webp', '.jpeg', '.svg', '.JPG', '.PNG'],
     'Music_Sort': ['.mp3', '.wav', '.ogg'],
-    'Video_sort': ['.mp4'],
-    'Text_Sort': ['.txt', '.docx', '.pdf', '.xlsx'],
-    'Script_Sort': ['.py']
+    'Video_Sort': ['.mp4'],
+    'Text_Sort': ['.txt', '.pdf'],
+    'File_Sort' : ['.xlsx', '.pptx', '.docx', '.csv', '.doc', '.ppt'],
+    'Script_Sort': ['.py', '.ipynb']
 }
+
+# ipynb is for capstone, .pbd is for pymol
 
 def fileOrganization():
     for directory, file_types in directories.items():
